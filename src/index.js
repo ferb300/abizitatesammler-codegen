@@ -2,6 +2,7 @@ import "dotenv/config"
 import { parse } from "csv-parse/sync"
 import * as fs from "fs"
 import rndWord from "random-noun-generator-german"
+import containsProfanity from "./profanitycheck.js"
 import sendSMS from "./sms.js"
 
 // configure sandbox
@@ -20,7 +21,7 @@ let numbers = parse(input, {
 let codes = []
 numbers.forEach(number => {
     let code = ""
-    while (code == "" || codes.includes(code)) {
+    while (code == "" || codes.includes(code) || containsProfanity(code)) {
         code = rndWord() + rndWord() + rndWord()
     }
     codes.push(code)
@@ -30,7 +31,6 @@ numbers.forEach(number => {
 // export codes and numbers
 let people = []
 for(let i = 0; i < numbers.length; i++) {
-    console.log(i)
     people.push({
         number: numbers[i],
         code: codes[i]

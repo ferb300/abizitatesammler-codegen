@@ -8,7 +8,7 @@ basicAuth.password = process.env.MESSENTE_PASSWORD;
 const api = new MessenteApi.OmnimessageApi();
 
 export default function sendSMS(number, text, sandbox) {
-    console.log(`${sandbox ? "[SANDBOX] ": ""} Sent SMS to ${number}: \"${text}\"`)
+    //console.log(`${sandbox ? "[SANDBOX] ": ""} Sent SMS to ${number}: \"${text}\"`)
     if (sandbox) { return }
     let sms = MessenteApi.SMS.constructFromObject({
         text: text
