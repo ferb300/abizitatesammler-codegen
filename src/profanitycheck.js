@@ -1,7 +1,7 @@
 import { de } from "naughty-words"
 
 export default function containsProfanity(string) {
-    de.concat(["Dildo", "Vergewaltig", "Rekt", "Fetisch"])
+    de.concat(["Dildo", "Vergewaltig", "Rekt", "Fetisch", "Hämorrhoid", "Abtreib"])
     let profanities = de.filter(v => string.toLowerCase().includes(v.toLowerCase()))
     // debug
     if (profanities.length != 0) {
