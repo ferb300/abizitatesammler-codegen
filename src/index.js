@@ -30,7 +30,7 @@ people.forEach(p => {
     }
     p.code = code
     codes.push(code)
-    sendSMS(p.number, `Hi ${p.name.split(" ")[0]}, dein Abizeitungs-Abgabe-Code lautet "${p.code}". Gib ihn an Freunde weiter, von denen du möchtest, dass sie deine Charakteristik erstellen. Diese können ihn nutzen, um sie auf https://abizeitungfag.de zur Veröffentlichung abzugeben. Weitere Informationen findest du in der Oberstufen-WhatsApp-Gruppe.`, sandbox)
+    sendSMS(p.number, `Hi ${p.name.split(" ")[0]}, dein Abizeitungs-Abgabe-Code lautet "${p.code}". Weitere Informationen findest du in der Oberstufengruppe.`, sandbox)
 });
 
 // export people with codes as json
