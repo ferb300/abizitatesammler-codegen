@@ -30,7 +30,7 @@ people.forEach(p => {
     }
     p.code = code
     codes.push(code)
-    sendSMS(p.number, `Hi ${p.name.split(" ")[0]}, dein Abizeitungs-Abgabe-Code lautet "${p.code}". Weitere Informationen findest du in der Oberstufengruppe.`, sandbox)
+    sendSMS(p.number, `Hi ${p.name.split(" ")[0]}, dein Abgabe-Code lautet "${p.code}". Weitere Informationen findest du in der Oberstufengruppe.`, sandbox)
 });
 
 // export people with codes as json
