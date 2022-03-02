@@ -1,5 +1,5 @@
 # Diurnum Codegen
-[![javascript](./src/javascript.svg)](https://badges.aleen42.com/src/javascript.svg) [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html) [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/ferb300/diurnum) [![Awesome Badges](https://img.shields.io/badge/badges-awesome-green.svg)](https://github.com/ferb300/diurnum)
+![javascript](https://badges.aleen42.com/src/javascript.svg) [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html) [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/ferb300/diurnum) [![Awesome Badges](https://img.shields.io/badge/badges-awesome-green.svg)](https://github.com/ferb300/diurnum)
 
 A node script intended to generate and send out codes for [Diurnum](https://github.com/ferb300/diurnum)
 
