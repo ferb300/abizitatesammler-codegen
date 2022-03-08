@@ -6,8 +6,10 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/index.js",
-    "start-no-sandbox": "node src/index.js --no-sandbox"
+    "all": "node src/all.js",
+    "all-no-sandbox": "node src/all.js --no-sandbox",
+    "fixmissing": "node src/fixmissing.js",
+    "fixmissing-no-sandbox": "node src/fixmissing.js --no-sandbox"
   },
   "repository": {
     "type": "git",

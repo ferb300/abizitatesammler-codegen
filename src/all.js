@@ -4,6 +4,7 @@ import * as fs from "fs"
 import rndWord from "random-noun-generator-german"
 import containsProfanity from "./profanitycheck.js"
 import sendSMS from "./sms.js"
+import { exit } from "process"
 
 // configure sandbox
 let sandbox = true
@@ -30,7 +31,7 @@ people.forEach(p => {
     }
     p.code = code
     codes.push(code)
-    sendSMS(p.number, `Hi ${p.name.split(" ")[0]}, dein Abgabe-Code lautet "${p.code}". Weitere Informationen findest du in der Oberstufengruppe.`, sandbox)
+    sendSMS(p.number, `Hi ${p.name.split(" ")[0]}, dein Abgabe-Code lautet "${p.code}."`, sandbox)
 });
 
 // export people with codes as json
